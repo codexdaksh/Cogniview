@@ -1,48 +1,89 @@
-Cogniview
-Smart Data Insights powered by Advanced AI.
+🧠 Cogniview
 
-About
-Cogniview is a premium Streamlit application for intelligent metadata extraction and instant data profiling. It uses advanced AI (via Ollama and Mistral LLM) to automate Exploratory Data Analysis (EDA), statistical summaries, and transforms natural language queries into validated Python code.
+Cogniview is a Streamlit-powered AI data analysis platform with a sleek glassmorphism interface.
+It allows users to upload datasets, perform automated exploratory data analysis (EDA), and interact with their data using natural language queries powered by LLMs.
 
-Features
-Drag-and-drop or browse to upload CSV or Excel files
+🚀 Features
 
-Automated metadata extraction and instant data profiling
+📁 Smart Data Upload: Upload CSV/Excel files with instant metadata extraction
 
-Smart column detection and missing value handling
+📊 Automated Analytics: EDA with statistical summaries, missing value detection, and interactive charts
 
-Interactive visualizations with Matplotlib and Seaborn
+🔮 Advanced Visualizations: Distributions, correlations, and relationship analysis
 
-LLM-powered Python code generation and syntax validation
+🧠 AI Assistant: Ask questions in natural language → get executable Pandas code and results
 
-Responsive glassmorphism design with smooth animations
+🎨 Premium UI: Glassmorphism design, smooth animations, and responsive layout
 
-Installation
-Clone the repository and install the required dependencies:
+🛠️ Tech Stack
 
-bash
-git clone https://github.com/yourusername/cogniview.git
+Streamlit
+ – Web UI framework
+
+Pandas
+ – Data manipulation & processing
+
+Matplotlib
+ & Seaborn
+ – Visualizations
+
+LangChain
+ – LLM orchestration
+
+Ollama
+ – Local LLM inference (configured with Mistral)
+
+Python standard libraries: os, json, re
+
+⚙️ Installation
+
+Clone the repo:
+
+git clone https://github.com/your-username/cogniview.git
 cd cogniview
+
+
+Create a virtual environment (recommended):
+
+python -m venv venv
+source venv/bin/activate   # On Linux/Mac
+venv\Scripts\activate      # On Windows
+
+
+Install dependencies:
+
 pip install -r requirements.txt
-Make sure Ollama is installed and ollama serve is running.
 
-Usage
-Start the application using Streamlit:
+▶️ Usage
 
-bash
+Start the Ollama service (make sure ollama serve is running).
+Example:
+
+ollama run mistral
+
+
+Launch the Streamlit app:
+
 streamlit run cloud.py
-Upload your dataset in the Data Upload tab to begin exploring insights.
 
-Contributing
-Contributions are welcome!
 
-Fork the repository
+Open your browser at http://localhost:8501 to explore Cogniview.
 
-Create your feature branch (git checkout -b feature/YourFeature)
+📂 Project Structure
+├── cloud.py          # Main Streamlit app
+├── requirements.txt  # Dependencies
+├── metadata.json     # Generated automatically after dataset upload
+└── README.md         # Documentation
 
-Commit your changes (git commit -m 'Add YourFeature')
+📌 Notes
 
-Push to the branch (git push origin feature/YourFeature)
+Ensure Ollama with Mistral model is installed and running.
 
-Open a pull request
+Supports CSV and Excel datasets.
 
+Automatically extracts metadata and provides analysis suggestions.
+
+📝 License
+
+This project is licensed under the MIT License.
+Feel free to use, modify, and share.
