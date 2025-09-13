@@ -1,0 +1,52 @@
+[
+    {
+        "Column": "gender",
+        "Type": "object",
+        "Sample": "Female, Male"
+    },
+    {
+        "Column": "race/ethnicity",
+        "Type": "object",
+        "Sample": "Group B, Group C, Group A"
+    },
+    {
+        "Column": "parental level of education",
+        "Type": "object",
+        "Sample": "Bachelor's Degree, Some College, Master's Degree, Associate's Degree"
+    },
+    {
+        "Column": "lunch",
+        "Type": "object",
+        "Sample": "Standard, Free/reduced"
+    },
+    {
+        "Column": "test preparation course",
+        "Type": "object",
+        "Sample": "Completed"
+    },
+    {
+        "Column": "math score",
+        "Type": "float64",
+        "Sample": "72.0, 69.0, 90.0, 47.0, 76.0"
+    },
+    {
+        "Column": "reading score",
+        "Type": "int64",
+        "Sample": "72, 90, 95, 57, 78"
+    },
+    {
+        "Column": "writing score",
+        "Type": "int64",
+        "Sample": "74, 88, 93, 44, 75"
+    },
+    {
+        "Column": "avg_score",
+        "Type": "float64",
+        "Sample": "72.66666666666667, 82.33333333333333, 92.66666666666667, 49.33333333333334, 76.33333333333333"
+    },
+    {
+        "Column": "pass_fail",
+        "Type": "float64",
+        "Sample": "1.0, 0.0"
+    }
+]
